@@ -107,10 +107,28 @@
         }
 
         .content-grid {
+            margin: 20px;
+        }
+
+        .content-row-top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .content-row-middle {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
-            margin: 20px;
+            margin-top: 20px;
+        }
+
+        .content-row-bottom {
+            margin-top: 20px;
+        }
+
+        .content-row-bottom .content-item {
+            width: 100%;
         }
 
         .content-item {
@@ -254,51 +272,50 @@
         </section>
 
         <section class="content-grid">
-            <div class="content-item">
-                <h2>ABOUT WHITESQUARE</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="content-item">
-                <h2>A WORD FROM OUR CEO</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="signature">Yane Naumovski, CEO</p>
-            </div>
-            <div class="content-item">
-                <h2>SERVICES</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="content-item">
-                <h2>OUR TEAMS</h2>
-                <div class="team-member">
-                    <img src="team1.jpg" alt="Team Member">
-                    <p>Lorem Ipsum</p>
+            <div class="content-row-top">
+                <div class="content-item">
+                    <h2>ABOUT WHITESQUARE</h2>
+                    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nunc. In egest mi dui, sit amet scelerisque.</p>
+                    <a href="#">Read more</a>
                 </div>
-                <div class="team-member">
-                    <img src="team2.jpg" alt="Team Member">
-                    <p>Lorem Ipsum</p>
+                <div class="content-item">
+                    <h2>A WORD FROM OUR CEO</h2>
+                    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nunc.</p>
+                    <p class="signature">Yane Naumovski, CEO</p>
                 </div>
-                <div class="team-member">
-                    <img src="team3.jpg" alt="Team Member">
-                    <p>Lorem Ipsum</p>
+            </div>
+
+            <div class="content-row-middle">
+                <div class="content-item">
+                    <h2>SERVICES</h2>
+                    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nunc.</p>
+                    <a href="#">Read more</a>
                 </div>
-                <a href="#">Read more</a>
+                <div class="content-item">
+                    <h2>OUR TEAMS</h2>
+                    <div class="team-member">
+                        <img src="team1.jpg" alt="Team Member">
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="content-item">
+                    <h2>24/7/365 SUPPORT</h2>
+                    <p>In ultricies pellentesque massa a porta. Aliquam ipsum enim, hendrerit ut porta nec, ullamcorper et nunc.</p>
+                    <a href="#">Read more</a>
+                </div>
             </div>
-            <div class="content-item">
-                <h2>24/7/365 SUPPORT</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#">Read more</a>
-            </div>
-            <div class="content-item">
-                <h2>OUR CLIENTS</h2>
-                <div class="client-logos">
-                    <img src="client1.png" alt="Client Logo">
-                    <img src="client2.png" alt="Client Logo">
-                    <img src="client3.png" alt="Client Logo">
-                    <img src="client4.png" alt="Client Logo">
-                    <img src="client5.png" alt="Client Logo">
-                    <img src="client6.png" alt="Client Logo">
+
+            <div class="content-row-bottom">
+                <div class="content-item">
+                    <h2>OUR CLIENTS</h2>
+                    <div class="client-logos">
+                        <img src="client1.png" alt="Client Logo">
+                        <img src="client2.png" alt="Client Logo">
+                        <img src="client3.png" alt="Client Logo">
+                        <img src="client4.png" alt="Client Logo">
+                        <img src="client5.png" alt="Client Logo">
+                        <img src="client6.png" alt="Client Logo">
+                    </div>
                 </div>
             </div>
         </section>
